@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), Arial, sans-serif;
   font-variation-settings: "wght" var(--weight-text);
   background-color: var(--bg-color);
   color: var(--accent-color);
@@ -28,7 +28,7 @@
 }
 
 .header {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), Arial, sans-serif;
   text-align: center;
   background-color: var(--bg-color);
   min-inline-size: 100%;
@@ -65,7 +65,7 @@
 
 .theme-menu__button {
   position: relative;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   border: none;
   background-color: transparent;
   text-transform: uppercase;
@@ -85,6 +85,10 @@
   cursor: pointer;
   opacity: 0.6;
   transition: color 0.3s;
+}
+
+.theme-menu__button:focus-visible {
+  outline: none;
 }
 
 .theme-menu__button:focus::after {
@@ -118,6 +122,7 @@
   max-width: 300px;
   padding-bottom: 10px;
   font-variation-settings: "wght" var(--weight-title);
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .content__section-card-text {
@@ -126,6 +131,7 @@
   font-size: 18px;
   gap: 27px;
   padding: 25px;
+  border-top: 2px solid var(--accent-color);
 }
 
 .content__section-image {
@@ -134,6 +140,7 @@
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+  /* outline: 2px solid var(--accent-color); */
 }
 
 .content__section-wrapper {
@@ -145,7 +152,7 @@
   z-index: 1;
   inset-block-start: 25px;
   inset-inline-end: clamp(0.8125rem, 0.6012rem + 1.0563vw, 1.5625rem);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 14px;
   mix-blend-mode: hard-light;
   text-shadow: 0 0 2px var(--text-shadow-color);
@@ -248,7 +255,7 @@
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   overflow: hidden;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), Arial, sans-serif;
 }
 
 .common-styles-button:focus-visible {
@@ -282,7 +289,7 @@
 .button__text {
   position: relative;
   z-index: 1;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   font-size: 14px;
   color: var(--button-animation-color);
   mix-blend-mode: difference;
@@ -354,7 +361,7 @@
 
 .dialog__title {
   font-size: 14px;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), Arial, sans-serif;
   color: var(--accent-color);
   text-transform: uppercase;
   line-height: 21px;
